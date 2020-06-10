@@ -74,7 +74,7 @@ jobs:
       - name: Download Package artifact
         uses: actions/download-artifact@master
         with:
-          name: MSIX
+          name: MSIX Package
           path: MSIX 
 
       - name: Build And Deploy

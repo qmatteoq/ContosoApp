@@ -68,6 +68,7 @@ jobs:
         path: ${{ env.Wap_Project_Directory }}\AppPackages
 
   deploy:
+    needs: [build]
     runs-on: ubuntu-latest
     name: Deploy Job
     steps:
